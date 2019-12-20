@@ -21,16 +21,8 @@
       "pre-commit": "kcd-scripts pre-commit"
     }
   },
-  "files": [
-    "dist",
-    "extend-expect.js"
-  ],
-  "keywords": [
-    "testing",
-    "dom",
-    "jest",
-    "jsdom"
-  ],
+  "files": ["dist", "extend-expect.js"],
+  "keywords": ["testing", "dom", "jest", "jsdom"],
   "author": "Joe Wright <joe@joejag.com> (https://code.joejag.com/)",
   "license": "MIT",
   "dependencies": {
@@ -57,9 +49,5 @@
       "import/no-unassigned-import": "off"
     }
   },
-  "eslintIgnore": [
-    "node_modules",
-    "coverage",
-    "dist"
-  ]
+  "eslintIgnore": ["node_modules", "coverage", "dist"]
 }

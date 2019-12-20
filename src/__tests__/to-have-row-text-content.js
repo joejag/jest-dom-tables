@@ -11,7 +11,6 @@ test('.toHaveRowTextContent', () => {
   const row = container.querySelectorAll('tr')[0]
 
   expect(row).toHaveRowTextContent('| A | B | C |')
-  // expect(row).toHaveRowTextContent(/| A | B | C |/)
   expect(row).not.toHaveRowTextContent('| Z | Y | X |')
 })
 

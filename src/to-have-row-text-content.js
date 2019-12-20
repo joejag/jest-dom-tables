@@ -1,5 +1,5 @@
-import {getMessage} from './utils'
 import {matcherHint} from 'jest-matcher-utils'
+import {getMessage} from './utils'
 
 export const toHaveRowTextContent = (actualRow, expectedRowText) => {
   const innerActualRowText = Array.from(actualRow.querySelectorAll('th, td'))
