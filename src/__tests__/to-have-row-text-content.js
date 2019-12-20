@@ -8,13 +8,11 @@ test('.toHaveRowTextContent', () => {
       </tr>
     </table>`)
 
-  expect(container.querySelectorAll('tr')[0]).toHaveRowTextContent(
-    '| A | B | C |',
-  )
+  const row = container.querySelectorAll('tr')[0]
 
-  expect(container.querySelectorAll('tr')[0]).not.toHaveRowTextContent(
-    '| Z | Y | X |',
-  )
+  expect(row).toHaveRowTextContent('| A | B | C |')
+  // expect(row).toHaveRowTextContent(/| A | B | C |/)
+  expect(row).not.toHaveRowTextContent('| Z | Y | X |')
 })
 
 test('handle negative test cases', () => {
