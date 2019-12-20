@@ -1,6 +1,6 @@
 {
   "name": "jest-dom-tables",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "description": "Additional jest matchers to test HTML tables",
   "main": "dist/index.js",
   "engines": {
