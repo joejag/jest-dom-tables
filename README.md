@@ -78,8 +78,6 @@ modifier.
 const element = document.querySelectorAll('tr')[0]
 
 expect(element).toHaveRowTextContent('| A | B | C |')
-expect(element).toHaveRowTextContent(/^| A | B | C |$/) // to match the whole content
-expect(element).toHaveRowTextContent(/| B | C |$/i) // to use case-insentive match
 expect(element).not.toHaveRowTextContent('| Z | Y | X |')
 ```
 
@@ -89,8 +87,6 @@ expect(element).not.toHaveRowTextContent('| Z | Y | X |')
 const element = getAllByRole('row')[0]
 
 expect(element).toHaveRowTextContent('| A | B | C |')
-expect(element).toHaveRowTextContent(/^| A | B | C |$/) // to match the whole content
-expect(element).toHaveRowTextContent(/| B | C |$/i) // to use case-insentive match
 expect(element).not.toHaveRowTextContent('| Z | Y | X |')
 ```
 
