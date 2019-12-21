@@ -51,7 +51,7 @@ import 'jest-dom-tables/extend-expect'
 toHaveRowTextContent(text: string | RegExp)
 ```
 
-This allows you to check whether the given talbe row element has a text content
+This allows you to check whether the given table row element has a text content
 or not.
 
 When a `string` argument is passed through, it will perform a partial
